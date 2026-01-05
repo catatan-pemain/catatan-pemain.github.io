@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://catatan-pemain.github.io/sitemap.xml
