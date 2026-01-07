@@ -656,10 +656,17 @@ games.forEach(game => {
           <span class="${color}" style="width:${game.rtp}%"></span>
         </div>
         <div class="percent">${game.rtp}%</div>
+
+        <!-- BUTTON -->
+        <div class="card-buttons">
+          <a href="https://t.ly/win1131" class="btn-card daftar">DAFTAR</a>
+          <a href="https://t.ly/win1131" class="btn-card login">LOGIN</a>
+        </div>
       </div>
     </div>
   `;
 });
+
 
 
 
