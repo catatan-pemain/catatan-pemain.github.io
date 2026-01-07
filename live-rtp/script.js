@@ -302,7 +302,7 @@ const games = [
 { name:"Aztec Treasure Hunt", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20trswild3.webp", link: "https://t.ly/win1131", rtp:85 },
 { name:"3 Dancing Monkeys", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswaysmonkey.png", link: "https://t.ly/win1131", rtp:26 },
 { name:"Himalayan Wild", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5himalaw.webp", link: "https://t.ly/win1131", rtp:15 },
-{ name:"Lucky Fishing", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswaysluckyfish.png", link: "https://t.ly/win1131", rtp:33 }
+{ name:"Lucky Fishing", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswaysluckyfish.png", link: "https://t.ly/win1131", rtp:33 },
 { name:"Running Sushi", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswayscashconv.webp", link: "https://t.ly/win1131", rtp:41 },
 { name:"Joker Race", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs25jokrace.png", link: "https://t.ly/win1131", rtp:55 },
 { name:"Candy Stars", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswaysstrwild.png", link: "https://t.ly/win1131", rtp:67 },
@@ -423,7 +423,7 @@ const games = [
 { name:"Lamp Of Infinity", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20lampinf.png", link: "https://t.ly/win1131", rtp:85 },
 { name:"Dragon Ball", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs1ball.png", link: "https://t.ly/win1131", rtp:26 },
 { name:"Magic Journey", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs8magicjourn.png", link: "https://t.ly/win1131", rtp:15 },
-{ name:"Fishin &  Reels", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10goldfish.png", link: "https://t.ly/win1131", rtp:33 }
+{ name:"Fishin &  Reels", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10goldfish.png", link: "https://t.ly/win1131", rtp:33 },
 { name:"Hot To Burn Multiplier", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5hotbmult.webp", link: "https://t.ly/win1131", rtp:41 },
 { name:"Dragon Kingdom - Eyes Of Fire", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5drmystery.png", link: "https://t.ly/win1131", rtp:55 },
 { name:"Joker King", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs25jokerking.png", link: "https://t.ly/win1131", rtp:67 },
@@ -588,7 +588,7 @@ const games = [
 { name:"Fortune Hit’n Roll", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs40wildrun.webp", link: "https://t.ly/win1131", rtp:85 },
 { name:"Empty The Bank", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20emptybank.png", link: "https://t.ly/win1131", rtp:26 },
 { name:"Book Of Tut", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10bookoftut.png", link: "https://t.ly/win1131", rtp:15 },
-{ name:"Wolf Gold Dice", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs25wgdice.webp", link: "https://t.ly/win1131", rtp:33 }
+{ name:"Wolf Gold Dice", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs25wgdice.webp", link: "https://t.ly/win1131", rtp:33 },
 { name:"Bounty Hunter", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20bhunter.webp", link: "https://t.ly/win1131", rtp:41 },
 { name:"Jackpot Blaze", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10jpblaze.webp", link: "https://t.ly/win1131", rtp:55 },
 { name:"Spire+", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/ar1spire.webp", link: "https://t.ly/win1131", rtp:67 },
@@ -599,7 +599,7 @@ const games = [
 { name:"Chests Of Cai Shen 2", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs25caishen2.webp", link: "https://t.ly/win1131", rtp:85 },
 { name:"Zombie School Megaways", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswayspompmr2.webp", link: "https://t.ly/win1131", rtp:26 },
 { name:"Fire Stampede 2", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswaysfirest2.webp", link: "https://t.ly/win1131", rtp:15 },
-{ name:"Mystic Wishes", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs7fire88fp.webp", link: "https://t.ly/win1131", rtp:33 }
+{ name:"Mystic Wishes", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs7fire88fp.webp", link: "https://t.ly/win1131", rtp:33 },
 { name:"Bigger Barn House Bonanza", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswaysbbarnh.webp", link: "https://t.ly/win1131", rtp:41 },
 { name:"Captain Kraken Megaways", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswayschilhtwo.webp", link: "https://t.ly/win1131", rtp:55 },
 { name:"Lobster House", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20lbstrhouse.webp", link: "https://t.ly/win1131", rtp:67 },
@@ -610,7 +610,7 @@ const games = [
 { name:"Big Bass Reel Repeat", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10bbrrp.webp", link: "https://t.ly/win1131", rtp:85 },
 { name:"Lava Balls", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswayslavabls.webp", link: "https://t.ly/win1131", rtp:26 },
 { name:"Ultra Burn Dice", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5ultradice.webp", link: "https://t.ly/win1131", rtp:15 },
-{ name:"Ice Mints", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20popbottles.webp", link: "https://t.ly/win1131", rtp:33 }
+{ name:"Ice Mints", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20popbottles.webp", link: "https://t.ly/win1131", rtp:33 },
 { name:"Spellmaster", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10spellmastr.webp", link: "https://t.ly/win1131", rtp:41 },
 { name:"Red Hot Luck", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20powerpays.webp", link: "https://t.ly/win1131", rtp:55 },
 { name:"Country Farming", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20mysteryst.webp", link: "https://t.ly/win1131", rtp:67 },
@@ -621,7 +621,7 @@ const games = [
 { name:"Mines+", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/ar1minehnt.webp", link: "https://t.ly/win1131", rtp:85 },
 { name:"Lucky Panda", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5lckpnd.webp", link: "https://t.ly/win1131", rtp:26 },
 { name:"Pandemic Rising", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs40pdmrsg.webp", link: "https://t.ly/win1131", rtp:15 },
-{ name:"Frightening Frankie", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20frankie.webp", link: "https://t.ly/win1131", rtp:33 }
+{ name:"Frightening Frankie", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20frankie.webp", link: "https://t.ly/win1131", rtp:33 },
 { name:"Bingo Mania", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs30bingomania.webp", link: "https://t.ly/win1131", rtp:41 },
 { name:"Mpoplay Sweet Bonanza Xmas", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20mposbxmas.webp", link: "https://t.ly/win1131", rtp:55 },
 { name:"Wild Wild Riches Returns", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswayswwrichr.webp", link: "https://t.ly/win1131", rtp:67 },
@@ -632,7 +632,7 @@ const games = [
 { name:"Big Bass Christmas – Frozen Lake", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10bbglxmas.webp", link: "https://t.ly/win1131", rtp:85 },
 { name:"Dj Neko", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10djneko.webp", link: "https://t.ly/win1131", rtp:26 },
 { name:"Super Gummy Strike", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5supergummy.webp", link: "https://t.ly/win1131", rtp:15 },
-{ name:"Zeus Vs Typhon", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswaysreelbtl.webp", link: "https://t.ly/win1131", rtp:33 }
+{ name:"Zeus Vs Typhon", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vswaysreelbtl.webp", link: "https://t.ly/win1131", rtp:33 },
 { name:"Sweet Craze", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs20chestcol.webp", link: "https://t.ly/win1131", rtp:41 },
 { name:"Lucky Fortune Tree", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5luckycol.webp", link: "https://t.ly/win1131", rtp:55 },
 { name:"Big Bass Splash 1000", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10bbsplashx.webp", link: "https://t.ly/win1131", rtp:67 },
@@ -660,5 +660,6 @@ games.forEach(game => {
     </div>
   `;
 });
+
 
 
