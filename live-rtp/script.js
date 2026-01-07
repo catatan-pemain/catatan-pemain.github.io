@@ -637,7 +637,7 @@ const games = [
   { name:"Lucky Fortune Tree", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5luckycol.webp", rtp:55 },
   { name:"Big Bass Splash 1000", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs10bbsplashx.webp", rtp:67 },
   { name:"Limbo+", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/ar1limboplus.webp", rtp:93 },
-  { name:"Joker’s Jewels Hold & Spin", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5jokjewhs.webp", rtp:85 },
+  { name:"Joker’s Jewels Hold & Spin", img:"https://images.linkcdn.cloud/global/game-list/slot/pragmaticplay/vs5jokjewhs.webp", rtp:85 }
 ];
 
 const grid = document.getElementById("rtpGrid");
@@ -658,5 +658,6 @@ games.forEach(game => {
     </div>
   `;
 });
+
 
 
