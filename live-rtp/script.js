@@ -667,6 +667,19 @@ games.forEach(game => {
   `;
 });
 
+// UPDATE 1 GAME SETIAP 1 JAM
+setInterval(() => {
+  games[currentIndex].rtp = randomRTP();
+  currentIndex++;
+
+  if(currentIndex >= games.length){
+    currentIndex = 0;
+  }
+
+  render();
+}, 3600000); // 1 JAM
+
+render();
 
 
 
