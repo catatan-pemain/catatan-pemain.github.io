@@ -56,3 +56,29 @@ h1 {
   font-weight:bold;
   font-size:14px;
 }
+
+.card-buttons{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+}
+
+.btn-card{
+  flex:1;
+  padding:7px 0;
+  font-size:12px;
+  font-weight:bold;
+  text-align:center;
+  border-radius:18px;
+  text-decoration:none;
+  color:#fff;
+}
+
+.btn-card.daftar{
+  background:linear-gradient(45deg,#22c55e,#16a34a);
+}
+
+.btn-card.login{
+  background:linear-gradient(45deg,#facc15,#eab308);
+  color:#000;
+}
