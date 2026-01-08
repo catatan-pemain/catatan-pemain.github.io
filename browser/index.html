@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browser Simpel</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="browser-container">
         <!-- Search Bar -->
         <div class="search-bar">
-            <input type="text" id="url" placeholder="Masukkan URL dan tekan Enter" />
+            <input 
+                type="text" 
+                id="url" 
+                placeholder="Masukkan URL dan tekan Enter"
+            >
             <button id="goButton">Go</button>
         </div>
-        
+
         <!-- Display Area -->
-        <iframe id="webView" class="web-view" src="" frameborder="0"></iframe>
+        <iframe 
+            id="webView" 
+            class="web-view" 
+            src="" 
+            frameborder="0">
+        </iframe>
     </div>
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
