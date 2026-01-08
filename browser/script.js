@@ -60,3 +60,11 @@ function renderFeed(items) {
         feed.appendChild(card);
     });
 }
+
+const lastTag = localStorage.getItem('lastTag');
+
+if (lastTag) {
+    items.sort((a, b) =>
+        a.tag === lastTag ? -1 : 1
+    );
+}
