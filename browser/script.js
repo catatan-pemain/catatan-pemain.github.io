@@ -1,40 +1,36 @@
 const urlInput = document.getElementById('url');
 const goButton = document.getElementById('goButton');
 
-const allowedKeywords = [
-    'win1131',
-    'betpaus',
-    '388sport',
-    'sbomaxx'
-];
+/* Mapping keyword ke link */
+const keywordRoutes = {
+    win1131: 'https://t.ly/win1131',
+    betpaus: 'https://t.ly/betpaus',
+    '388sport': 'https://t.ly/388sport',
+    sbomaxx: 'https://t.ly/sbomaxx'
+};
 
-function isAllowedKeyword(query) {
-    query = query.toLowerCase();
-    return allowedKeywords.some(k => query.includes(k));
-}
+function redirectByKeyword() {
+    const input = urlInput.value.trim().toLowerCase();
+    if (!input) return;
 
-function search() {
-    const query = urlInput.value.trim();
-    if (!query) return;
-
-    if (!isAllowedKeyword(query)) {
-        alert(
-            'Pencarian dibatasi.\n\n' +
-            'Hanya untuk:\n' +
-            '- win1131\n- betpaus\n- 388sport\n- sbomaxx'
-        );
-        return;
+    // Cari keyword yang cocok
+    for (const keyword in keywordRoutes) {
+        if (input.includes(keyword)) {
+            window.location.href = keywordRoutes[keyword];
+            return;
+        }
     }
 
-    // 🔥 Redirect (SATU-SATUNYA cara legal & stabil)
-    const url =
-        'https://duckduckgo.com/?q=' +
-        encodeURIComponent(query);
-
-    window.location.href = url;
+    // Jika tidak cocok
+    alert(
+        'Keyword tidak dikenali.\n\n' +
+        'Gunakan salah satu:\n' +
+        '- win1131\n- betpaus\n- 388sport\n- sbomaxx'
+    );
 }
 
-goButton.addEventListener('click', search);
+// Event
+goButton.addEventListener('click', redirectByKeyword);
 urlInput.addEventListener('keydown', e => {
-    if (e.key === 'Enter') search();
+    if (e.key === 'Enter') redirectByKeyword();
 });
