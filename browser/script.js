@@ -15,7 +15,7 @@ function isAllowedKeyword(query) {
     return allowedKeywords.some(keyword => query.includes(keyword));
 }
 
-function loadURL() {
+function loadSearch() {
     let query = urlInput.value.trim();
     if (!query) return;
 
@@ -23,26 +23,25 @@ function loadURL() {
     if (!isAllowedKeyword(query)) {
         alert(
             'Pencarian dibatasi.\n\n' +
-            'Keyword yang diizinkan:\n' +
+            'Hanya untuk:\n' +
             '- win1131\n- betpaus\n- 388sport\n- sbomaxx'
         );
         return;
     }
 
-    // Jika lolos, lakukan pencarian Google
-    const searchURL =
-  'https://duckduckgo.com/?q=' + encodeURIComponent(query) + '&ia=web';
+    // 🔥 DuckDuckGo bisa di-iframe
+    const duckDuckGoURL =
+        'https://duckduckgo.com/?q=' +
+        encodeURIComponent(query) +
+        '&kl=id-id&ia=web';
 
-    webView.src = searchURL;
+    webView.src = duckDuckGoURL;
 }
 
-// Klik tombol Go
-goButton.addEventListener('click', loadURL);
-
-// Tekan Enter
-urlInput.addEventListener('keypress', function (event) {
+// Event
+goButton.addEventListener('click', loadSearch);
+urlInput.addEventListener('keydown', event => {
     if (event.key === 'Enter') {
-        loadURL();
+        loadSearch();
     }
 });
-
