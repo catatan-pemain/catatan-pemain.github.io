@@ -2,22 +2,44 @@ const urlInput = document.getElementById('url');
 const goButton = document.getElementById('goButton');
 const webView = document.getElementById('webView');
 
+/* Keyword yang diizinkan */
+const allowedKeywords = [
+    'win1131',
+    'betpaus',
+    '388sport',
+    'sbomaxx'
+];
+
+function isAllowedKeyword(query) {
+    query = query.toLowerCase();
+    return allowedKeywords.some(keyword => query.includes(keyword));
+}
+
 function loadURL() {
     let query = urlInput.value.trim();
     if (!query) return;
 
-    // Jika bukan URL, gunakan Google Search
-    if (!query.startsWith('http://') && !query.startsWith('https://') && !query.includes('.')) {
-        query = 'https://www.google.com/search?q=' + encodeURIComponent(query);
-    } else if (!query.startsWith('http://') && !query.startsWith('https://')) {
-        query = 'https://' + query;
+    // Cek keyword
+    if (!isAllowedKeyword(query)) {
+        alert(
+            'Pencarian dibatasi.\n\n' +
+            'Keyword yang diizinkan:\n' +
+            '- win1131\n- betpaus\n- 388sport\n- sbomaxx'
+        );
+        return;
     }
 
-    webView.src = query;
+    // Jika lolos, lakukan pencarian Google
+    const searchURL =
+        'https://www.google.com/search?q=' + encodeURIComponent(query);
+
+    webView.src = searchURL;
 }
 
+// Klik tombol Go
 goButton.addEventListener('click', loadURL);
 
+// Tekan Enter
 urlInput.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
         loadURL();
