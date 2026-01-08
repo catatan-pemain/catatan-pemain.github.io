@@ -31,7 +31,7 @@ function loadURL() {
 
     // Jika lolos, lakukan pencarian Google
     const searchURL =
-        'https://www.google.com/search?q=' + encodeURIComponent(query);
+  'https://duckduckgo.com/?q=' + encodeURIComponent(query) + '&ia=web';
 
     webView.src = searchURL;
 }
@@ -45,3 +45,4 @@ urlInput.addEventListener('keypress', function (event) {
         loadURL();
     }
 });
+
