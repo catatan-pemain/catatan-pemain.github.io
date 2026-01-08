@@ -1,8 +1,6 @@
 const urlInput = document.getElementById('url');
 const goButton = document.getElementById('goButton');
-const webView = document.getElementById('webView');
 
-/* Keyword yang diizinkan */
 const allowedKeywords = [
     'win1131',
     'betpaus',
@@ -12,11 +10,11 @@ const allowedKeywords = [
 
 function isAllowedKeyword(query) {
     query = query.toLowerCase();
-    return allowedKeywords.some(keyword => query.includes(keyword));
+    return allowedKeywords.some(k => query.includes(k));
 }
 
-function loadSearch() {
-    let query = urlInput.value.trim();
+function search() {
+    const query = urlInput.value.trim();
     if (!query) return;
 
     if (!isAllowedKeyword(query)) {
@@ -28,16 +26,15 @@ function loadSearch() {
         return;
     }
 
-    // 🔥 DuckDuckGo HTML (iframe-safe)
-    const duckDuckGoURL =
-        'https://html.duckduckgo.com/html/?q=' +
+    // 🔥 Redirect (SATU-SATUNYA cara legal & stabil)
+    const url =
+        'https://duckduckgo.com/?q=' +
         encodeURIComponent(query);
 
-    webView.src = duckDuckGoURL;
+    window.location.href = url;
 }
 
-// Event listener
-goButton.addEventListener('click', loadSearch);
+goButton.addEventListener('click', search);
 urlInput.addEventListener('keydown', e => {
-    if (e.key === 'Enter') loadSearch();
+    if (e.key === 'Enter') search();
 });
