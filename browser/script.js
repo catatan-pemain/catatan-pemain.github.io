@@ -1,21 +1,25 @@
-document.getElementById('goButton').addEventListener('click', function() {
-    var url = document.getElementById('url').value;
-    if (url) {
-        if (!url.startsWith("http://") && !url.startsWith("https://")) {
-            url = "https://" + url;  // Menambahkan "https://" jika tidak ada
-        }
-        document.getElementById('webView').src = url;
-    }
-});
+const urlInput = document.getElementById('url');
+const goButton = document.getElementById('goButton');
+const webView = document.getElementById('webView');
 
-document.getElementById('url').addEventListener('keypress', function(event) {
+function loadURL() {
+    let url = urlInput.value.trim();
+
+    if (!url) return;
+
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+        url = 'https://' + url;
+    }
+
+    webView.src = url;
+}
+
+// Klik tombol Go
+goButton.addEventListener('click', loadURL);
+
+// Tekan Enter
+urlInput.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
-        var url = document.getElementById('url').value;
-        if (url) {
-            if (!url.startsWith("http://") && !url.startsWith("https://")) {
-                url = "https://" + url;  // Menambahkan "https://" jika tidak ada
-            }
-            document.getElementById('webView').src = url;
-        }
+        loadURL();
     }
 });
