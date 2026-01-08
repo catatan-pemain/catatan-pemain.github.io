@@ -19,7 +19,6 @@ function loadSearch() {
     let query = urlInput.value.trim();
     if (!query) return;
 
-    // Cek keyword
     if (!isAllowedKeyword(query)) {
         alert(
             'Pencarian dibatasi.\n\n' +
@@ -29,19 +28,16 @@ function loadSearch() {
         return;
     }
 
-    // 🔥 DuckDuckGo bisa di-iframe
+    // 🔥 DuckDuckGo HTML (iframe-safe)
     const duckDuckGoURL =
-        'https://duckduckgo.com/?q=' +
-        encodeURIComponent(query) +
-        '&kl=id-id&ia=web';
+        'https://html.duckduckgo.com/html/?q=' +
+        encodeURIComponent(query);
 
     webView.src = duckDuckGoURL;
 }
 
-// Event
+// Event listener
 goButton.addEventListener('click', loadSearch);
-urlInput.addEventListener('keydown', event => {
-    if (event.key === 'Enter') {
-        loadSearch();
-    }
+urlInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') loadSearch();
 });
