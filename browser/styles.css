@@ -65,3 +65,10 @@ body {
     border: none;
     border-radius: 8px;
 }
+.info-text {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 20px;
+}
+
+
