@@ -3,21 +3,21 @@ const goButton = document.getElementById('goButton');
 const webView = document.getElementById('webView');
 
 function loadURL() {
-    let url = urlInput.value.trim();
+    let query = urlInput.value.trim();
+    if (!query) return;
 
-    if (!url) return;
-
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
-        url = 'https://' + url;
+    // Jika bukan URL, gunakan Google Search
+    if (!query.startsWith('http://') && !query.startsWith('https://') && !query.includes('.')) {
+        query = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+    } else if (!query.startsWith('http://') && !query.startsWith('https://')) {
+        query = 'https://' + query;
     }
 
-    webView.src = url;
+    webView.src = query;
 }
 
-// Klik tombol Go
 goButton.addEventListener('click', loadURL);
 
-// Tekan Enter
 urlInput.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
         loadURL();
