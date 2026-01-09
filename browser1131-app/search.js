@@ -1,26 +1,36 @@
-const input = document.getElementById('keyword');
-const button = document.getElementById('go');
+const urlInput = document.getElementById('url');
+const goButton = document.getElementById('goButton');
 
-
-const routes = {
-win1131: 'https://t.ly/win1131',
-betpaus: 'https://t.ly/betpaus',
-'388sport': 'https://t.ly/388sport',
-sbomaxx: 'https://t.ly/sbomaxx'
+/* Mapping keyword ke link */
+const keywordRoutes = {
+    win1131: 'https://t.ly/win1131',
+    betpaus: 'https://t.ly/betpaus',
+    '388sport': 'https://t.ly/388sport',
+    sbomaxx: 'https://t.ly/sbomaxx'
 };
 
+function redirectByKeyword() {
+    const input = urlInput.value.trim().toLowerCase();
+    if (!input) return;
 
-function search() {
-const text = input.value.toLowerCase();
-for (let key in routes) {
-if (text.includes(key)) {
-window.location.href = routes[key];
-return;
-}
-}
-alert('Keyword tidak tersedia');
+    // Cari keyword yang cocok
+    for (const keyword in keywordRoutes) {
+        if (input.includes(keyword)) {
+            window.location.href = keywordRoutes[keyword];
+            return;
+        }
+    }
+
+    // Jika tidak cocok
+    alert(
+        'Keyword tidak dikenali.\n\n' +
+        'Gunakan salah satu:\n' +
+        '- win1131\n- betpaus\n- 388sport\n- sbomaxx'
+    );
 }
 
-
-button.onclick = search;
-input.onkeydown = e => e.key === 'Enter' && search();
+// Event
+goButton.addEventListener('click', redirectByKeyword);
+urlInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') redirectByKeyword();
+});
