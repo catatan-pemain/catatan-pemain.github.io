@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Browser1131</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser1131</title>
+
+    <!-- Icon / Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <div class="browser-container">
+        
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Browser1131 Logo" class="logo">
+        </div>
 
-<header class="header">
-<img src="logo.png" class="logo">
-</header>
+        <!-- Search Bar -->
+        <p class="info-text">
+    Pencarian hanya tersedia untuk: 
+    <strong>win1131, betpaus, 388sport, sbomaxx</strong>
+</p>
 
+        <div class="search-bar">
+            <input 
+                type="text" 
+                id="url" 
+                placeholder="Masukkan URL atau pencarian"
+            >
+            <button id="goButton">Go</button>
+        </div>
 
-<nav class="nav">
-<a href="index.html" class="active">Search</a>
-<a href="discover.html">Discover</a>
-</nav>
+        <!-- Display Area -->
+        <iframe 
+            id="webView" 
+            class="web-view" 
+            src="" 
+            frameborder="0">
+        </iframe>
+    </div>
 
-
-<div class="search-box">
-<input type="text" id="keyword" placeholder="Ketik keyword...">
-<button id="go">Go</button>
-</div>
-
-
-<script src="search.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
