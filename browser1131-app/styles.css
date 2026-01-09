@@ -70,3 +70,60 @@ body {
     color: #5f6368;
     margin-bottom: 20px;
 }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f1f3f4;
+}
+
+
+.header {
+text-align: center;
+padding: 24px;
+background: #fff;
+}
+
+
+.logo {
+max-width: 220px;
+}
+
+
+.subtitle {
+color: #5f6368;
+}
+
+
+.feed {
+max-width: 600px;
+margin: auto;
+padding: 16px;
+}
+
+
+.card {
+background: #fff;
+border-radius: 16px;
+box-shadow: 0 2px 8px rgba(0,0,0,.1);
+margin-bottom: 20px;
+overflow: hidden;
+cursor: pointer;
+}
+
+
+.card img {
+width: 100%;
+}
+
+
+.card h3 {
+padding: 12px;
+margin: 0;
+}
+
+
+.card p {
+padding: 0 12px 12px;
+color: #555;
+}
