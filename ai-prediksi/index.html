@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Prediksi Username Jackpot</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <div class="title">AI PREDIKSI USERNAME</div>
+        <div class="subtitle">input identity then generate reward</div>
+
+        <input type="text" id="username" placeholder="ENTER USERNAME">
+        <button onclick="generate()">GENERATE</button>
+    </div>
+
+    <div class="card hidden" id="result">
+        <div class="access">[ ACCESS GRANTED ]</div>
+
+        <div class="result-user" id="resultUser"></div>
+
+        <div class="reward">
+            <div class="reward-title">TOTAL HADIAH</div>
+            <div class="reward-value" id="rewardValue"></div>
+            <div class="reward-status">transfer queued :: awaiting confirmation</div>
+        </div>
+    </div>
+
+    <div class="log">
+        <p>[ OK ] Data stream synchronized...</p>
+        <p>[ INFO ] Secure channel established</p>
+        <p>[ INFO ] Awaiting next update</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
